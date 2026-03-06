@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Love Quazii</title>
+
+<style>
+body{
+background:black;
+color:white;
+text-align:center;
+font-family:Arial;
+margin-top:100px;
+}
+
+h1{
+animation: fade 4s;
+}
+
+img{
+width:350px;
+margin-top:30px;
+display:none;
+}
+
+@keyframes fade{
+from{opacity:0;}
+to{opacity:1;}
+}
+</style>
+
+</head>
+
+<body>
+
+<audio autoplay>
+<source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<h1 id="text">
+You are the most beautiful part of my life ❤️
+</h1>
+
+<img id="pic" src="couple.jpg">
+
+<script>
+setTimeout(function(){
+document.getElementById("pic").style.display="block";
+},5000);
+</script>
+
+</body>
+</html>
